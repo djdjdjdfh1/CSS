@@ -1,0 +1,23 @@
+.heading {
+    background-color: orangered;
+    text-align: center;
+    padding: 20px 0;
+}
+.list-box {
+    border: dashed black 3px;
+    border-radius: 20px;
+    padding: 20px 20px;
+}
+.list-box p {
+    background-color: beige;
+    padding: 10px 5px;
+}
+.home {
+    text-decoration: none;
+    background-color: orange;
+    border-radius: 20px;
+    padding: 15px;
+}
+.home:hover {
+    background-color: red;
+}
