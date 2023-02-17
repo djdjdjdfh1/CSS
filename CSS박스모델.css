@@ -77,3 +77,9 @@
     padding: 2px;
     border: 1px solid black;
 }
+
+.outline {
+    outline-style: solid;
+    outline-width: 3px;
+    outline-color: thistle;
+}
