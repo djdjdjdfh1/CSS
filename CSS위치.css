@@ -1,0 +1,21 @@
+.background-orange {
+    background-color: orange;
+}
+.inline-block {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+.none {
+    display: none;
+}
+
+.opacity {
+    /* 1~100%, 0~1 숫자 */
+    opacity: 25%;
+    background-color: yellow;
+}
