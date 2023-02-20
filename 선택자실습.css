@@ -1,0 +1,16 @@
+.box {
+    border: 2px solid red;
+    padding: 20px 0;
+}
+a {
+    text-decoration: none;
+}
+.box li{
+    list-style-type: none;
+}
+.hashtag {
+    float: right;
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
+}

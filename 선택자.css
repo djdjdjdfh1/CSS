@@ -18,7 +18,47 @@
 .test {
     background-color: beige;
 }
-.input-focus {
+.input-focus:focus {
     background-color: brown;
     color: antiquewhite;
+}
+.input-focus:focus+p {
+    color: blue;
+}
+.state>input:checked+span {
+    color: gray;
+}
+.state>input:disabled+span {
+    text-decoration: line-through 1px solid; 
+}
+.menu-list>li:first-child {
+    background-color: cornflowerblue;
+}
+.menu-list>li:last-child {
+    background-color: aqua;
+}
+.menu-list>li:nth-child(2n) {
+    background-color: green;
+}
+.table-color {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+.table-color>tbody>tr:nth-child(2n) {
+    background-color: green;
+}
+.child-tag>p:first-child {
+    color: blue;
+}
+.child-tag>h1{
+    color:brown;
+}
+
+p:first-of-type {
+    color: red;
+}
+/* 클래스를 지정하고 자손으로 타입찾기 
+    first-child와 동일한 역할*/
+.of-type p:first-of-type {
+    color: red;
 }
