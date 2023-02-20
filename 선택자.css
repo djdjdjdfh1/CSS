@@ -1,0 +1,24 @@
+.outbox p{
+    background-color: yellow;
+}
+.outbox>p{
+    background-color: aqua;
+}
+.sibling~p {
+    background-color: green;
+}
+/* +를 사용할때는 바로 뒤에 있는 태그만 찾을 수 있다*/
+.sibling+a {
+    /* 바로 뒤에 있지않기에 찾을수 없음*/
+    background-color: aquamarine;
+}
+.sibling+p {
+    background-color: aquamarine;
+}
+.test {
+    background-color: beige;
+}
+.input-focus {
+    background-color: brown;
+    color: antiquewhite;
+}
