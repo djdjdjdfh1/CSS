@@ -68,3 +68,25 @@ body {
     -webkit-background-clip: text;
     color: transparent;
 }
+.border-image {
+    border-image: url(./img/pencil-solid.svg) 30;
+}
+.text {
+    background-color: greenyellow;
+    height: 100px;
+    word-break: keep-all;
+    /* 각 콘텐츠의 값이 넘쳤을때 어떻게 보일지*/
+    overflow: hidden;
+    /* 글자가 자동줄바꿈이 있는지 확인*/
+    white-space: nowrap;
+    /* 글자가 그 크기를 넘어갔을때 모습 정함*/
+    text-overflow: ellipsis;
+}
+.text-kr {
+    background-color: yellow;
+    width: 100px;
+    height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
