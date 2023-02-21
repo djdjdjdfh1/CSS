@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-color: aqua;
+    /*패딩값으로 가운데 정렬함*/
+    padding: 30px; 
+    text-align: center;
+}
+.nav {
+    background-color: aquamarine;
+    overflow: auto;
+    padding-bottom: 10px;
+}
+.nav>ul{
+    list-style-type: none;
+}
+.nav>ul>li{
+    float: left;
+    border-right: solid 2px black;
+    padding: 0 10px;
+}
+.nav>ul>li:last-child {
+    border: none;
+}
+.main {
+    background-color: greenyellow;
+    padding: 5px;
+    width: 800px;
+    /*중앙 정렬해줌*/
+    margin: auto;
+    /*최소값을 지정해주면 컨텐츠의 내용이 없을때 크기*/
+    /* height: auto가 기본적으로 돼있기에 컨텐츠의 내용이 많으면 자동으로 늘어난다*/
+    min-height: 500px;
+}
+.content1 h2 {
+    margin: 0;
+}
+.footer {
+    background-color: green;
+    height: 50px;
+}
