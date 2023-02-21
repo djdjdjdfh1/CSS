@@ -1,0 +1,70 @@
+@import url(./float레이아웃.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap');
+@font-face {
+    font-family: 'TAEBAEKmilkyway';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/TAEBAEKmilkyway.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+input[type="button"] {
+    background-image: url(./img/pencil-solid.svg);
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+}
+.font {
+    font-family: 'Noto Sans KR';
+    font-weight: 500;
+}
+.gradient{
+    height: 50px;
+    background: -webkit-linear-gradient(right,green,yellow, white);
+}
+.gradient2{
+    height: 50px;
+    background: -webkit-linear-gradient(90deg,rgba(0,255,0,0.5),yellow, white);
+}
+body {
+    background: -webkit-linear-gradient(90deg,rgba(0,0,0,0.5),white);
+}
+.gradient-circle {
+    width: 150px;
+    height: 150px;
+    background: -webkit-radial-gradient(red 30%,rgba(255,255,255,0)50%);
+}
+.gradient-circle1 {
+    width: 150px;
+    height: 150px;
+    background: -webkit-radial-gradient(closest-side,red, orange, yellow, green, blue, navy, purple);
+}
+.box-shadow {
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    box-shadow: 3px 3px 2px #fff;
+}
+.background {
+    background-image: url(./img/cat.jpg);
+    width: 600px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.background1 {
+    width: 600px;
+    height: 300px;
+    border: #fff 2px solid;
+    padding: 30px;
+    background-image: url(./img/pencil-solid.svg);
+    background-origin: content-box;
+    background-clip: content-box;
+}
+.background2 {
+    background-image: url(./img/cat.jpg);
+    font-size: 2rem;
+    -webkit-background-clip: text;
+    color: transparent;
+}
