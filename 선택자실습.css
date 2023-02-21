@@ -1,16 +1,40 @@
-.box {
+ul {
+    list-style-type: none;
+}
+.dictionary {
     border: 2px solid red;
     padding: 20px 0;
 }
-a {
+.dictionary>ul>li>a {
     text-decoration: none;
+    color: black;
 }
-.box li{
-    list-style-type: none;
-}
-.hashtag {
+/* 태그가 block 속성일 때 float속성으로 정렬*/
+.hashtag>ul>li {
     float: right;
     background-color: blue;
     color: white;
+    margin: 0 5px;
+    padding: 5px 10px;
     border-radius: 20px;
+}   
+.hashtag-inline {
+    clear: both;
+}
+.hashtag-inline>span{
+    position: relative;
+    left: 70%;
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 10px;
+    display: inline-block;
+}
+.anno>p::after{
+    content: "N";
+    color: white;
+    background-color: orange;
+    border-radius: 50%;
+    padding: 1px 5px;
+    display: inline-block;
 }
