@@ -196,11 +196,64 @@ input[type="checkbox"]+span {
     }
 }
 .text {
+    /*절댓값으로 공간차지x 다른 블럭이 그자리 차지*/
     position: absolute;
+    /*텍스트 높이조정*/
     box-sizing: border-box;
     padding-top: 45px;
     width: 150px;
     height: 150px;
     text-align: center;
+    /*뒤에 있는거 앞으로 끌어오기*/
     z-index: 10;
+}
+.filter {
+    width: 300px;
+}
+.filter:hover {
+    filter: blur(5px) brightness(0.8);
+    transition: all 1s;
+}
+
+.image-list>.content-image{
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    background-size: cover;
+}
+.image-list>.content-image:nth-child(1) {
+    background-image: url(./img/cat.jpg);
+}
+.image-list>.content-image:nth-child(1):hover {
+    filter: blur(5px);
+}
+.image-list>.content-image:nth-child(2) {
+    background-image: url(./img/cat2.jpg);
+    filter: contrast(30%);
+}
+.image-list>.content-image:nth-child(3) {
+    background-image: url(./img/sea.jpg);
+    filter: sepia();
+}
+.pencil {
+    background-image: url(./img/pencil-solid.svg);
+    width: 150px;
+    height: 150px;
+    animation: vibration 0.1s infinite;
+}
+@keyframes vibration {
+    0% {transform: rotate(1deg);}
+    33% {transform: rotate(-1deg);}
+    66% {transform: rotate(1deg);}
+    100% {transform: rotate(-1deg);}
+}
+.mix-blend {
+    position: fixed;
+    top: 0;
+    mix-blend-mode: difference;
+    color: white;
+    background-color: blue;
+}
+body {
+    background-color: white;
 }
