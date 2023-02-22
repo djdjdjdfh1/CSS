@@ -1,0 +1,30 @@
+.flex-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.flex-box-height {
+    display: flex;
+    height: 150px;
+    background-color: burlywood;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-box-height>p {
+    width: 55px;
+    background-color: aliceblue;
+}
+.flex-box-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.flex-box-height-wrap {
+    display: flex;
+    background-color: burlywood;
+    height: 150px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* wrap이 설정됐을때 사용 */
+    align-content: space-around;
+}
