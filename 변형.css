@@ -116,7 +116,7 @@ input[type="checkbox"]+span {
     background-image: url(./img/cat.jpg);
     background-size: cover;
 }
-.content-conainer>.black{
+.content-container>.black{
     position: absolute;
     color: white;
     text-align: center;
@@ -127,7 +127,7 @@ input[type="checkbox"]+span {
     background-color: black;
     opacity: 0;
 }
-.content-conainer:hover>.black {
+.content-container:hover>.black {
     opacity: 0.5;
     transition: all 1s;
 }
@@ -145,4 +145,62 @@ input[type="checkbox"]+span {
     0% {transform: translate(0,0)}
     50% {transform: translate(200px,0)}
     100% {transform: translate(0,0)}
+}
+.wrap {
+    overflow: hidden;
+}
+.animation-box {
+    animation: movingbox 3s infinite;
+}
+
+@keyframes movingbox {
+    0% {
+        border-radius: 0;
+        background-color: orange;
+    }
+    20% {
+        transform: rotate(90deg);
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 0%;
+        border-top-right-radius: 0%;
+        background-color: orangered;
+    }
+    40% {
+        transform: rotate(180deg);
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%; border-bottom-right-radius: 0%;
+        border-top-right-radius: 0%;
+        background-color: orangered;
+    }
+    60% {
+        transform: rotate(270deg);
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%; border-bottom-right-radius: 50%;
+        border-top-right-radius: 0%;
+        background-color: orangered;
+    }
+    80% {
+        transform: rotate(360deg);
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%; border-bottom-right-radius: 50%;
+        border-top-right-radius: 50%;
+        background-color: orangered;
+    }
+    100% {
+        transform: rotate(360deg);
+        border-top-left-radius: 0%;
+        border-bottom-left-radius: 0%; border-bottom-right-radius: 0%;
+        border-top-right-radius: 0%;
+        background-color:orangered;
+    }
+}
+.text {
+    position: absolute;
+    box-sizing: border-box;
+    padding-top: 45px;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    z-index: 10;
 }
