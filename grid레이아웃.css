@@ -50,11 +50,23 @@
     grid-row: 4;
     border: 1px solid salmon;
 }
+/* grid 실습 확인 */
 .grid1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
 }
-.grid1 img {
+.grid1>.content>.item-image {
+    background-image: url(./img/cat.jpg);
     width: 150px;
     height: 200px;
+    background-size: cover;
+}
+.grid1>.content>h4,.grid1>.content>p {
+    margin: 0;
+    padding: 0;
+}
+.grid1>.content:hover>.item-image {
+    filter: brightness(50%);
+    transition: all 0.5s;
 }
