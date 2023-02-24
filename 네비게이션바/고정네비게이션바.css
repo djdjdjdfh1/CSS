@@ -1,0 +1,28 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+.header {
+    background-color: aquamarine;
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+}
+.header>.nav>ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    padding: 0;
+}
+.main {}
+/* 고정 네비게이션 바를 사용할때는 컨텐츠가 보여질 공간 확보 */
+.main>.content1 {
+    /* 브라우저 높이비율에 따라서 보이고 싶을때 사용*/
+    height: 100vh;
+    background-color: aqua;
+    padding-top: 150px;
+}
+.main>.content2 {
+    height: 100vh;
+    background-color: lightskyblue;
+}
