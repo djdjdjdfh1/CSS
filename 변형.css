@@ -44,7 +44,7 @@ input[type="checkbox"]:checked+span{
     color: blue;
 }
 input[type="checkbox"]+span {
-    transition: color;
+    transition: color 1s;
 }
 .after-transition>p::after {
     content: "다른 내용으로 전환";
