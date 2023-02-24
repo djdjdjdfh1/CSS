@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.wrap {
+    width: 1000px;
+    margin: auto;
+    background-color: blue;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+}
+.header {
+    background-color: rgba(12, 54, 203, 0.977);
+    width: 1000px;
+    height: 200px;
+    line-height: 150px;
+}
+.nav {  
+    background-color: rgb(20, 20, 164);
+    height: 100px;   
+    box-sizing: border-box;
+    padding: 20px 0;
+}
+.main-grid {
+    display: grid;
+    grid-template-columns: 250px 500px 250px;
+    height: 500px;
+    grid-auto-rows: minmax(500px, auto);
+}
+.main-grid>.left {
+    background: lightskyblue;
+}
+.main-grid>.content {
+    background-color: lightblue;
+}
+.main-grid>.right {
+    background-color: rgb(31, 202, 202);
+}
+.main-float {
+    overflow: auto;
+}
+.main-float>.left {
+    background-color: aqua;
+    float: left;
+    width: 250px;
+    height: 500px;
+}
+.main-float>.right {
+    background-color: lightseagreen;
+    float: right;
+    width: 250px;
+    height: 500px;
+}
+.main-float>.content {
+    background-color: rgb(17, 116, 215);
+    /* 마진값 양쪽 다 줘야함 */
+    margin: 0 250px;
+    height: 500px;
+}
+.footer {
+    clear: both;
+    height: 80px;
+    background-color: navy;
+}
